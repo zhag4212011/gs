@@ -33,3 +33,55 @@ Fritz!OS（德语）
 更新网址
 http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv4=<ipaddr> http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv6=<ip6addr>&ipv6prefix=<ip6lanprefix> 
 （与空格结合可同时更新 IPv4 和 IPv6 地址）
+
+
+dyndns ipv6
+Documentation 
+Community
+My Zones 
+My Domains
+zhang4212011@gmail.com 
+Your registered zones are not active yet. Please confirm your email address zhang4212011@gmail.com! Settings
+×You have successfully registered your zone!
+z4212011.dynv6.net
+Status
+Records
+Hooks
+Instructions
+Installation instructions
+The APIs overview describes all the possibilities to manage and update your zones.
+
+Applications
+The following applications support dynv6.com:
+
+DDNS Updater 2 (Synology NAS)
+inadyn-mt
+AppQuarter (MacOS)
+Dynephant (Windows)
+Are any applications missing? Please tell us!
+
+ddclient
+Use the following snippet in your ddclient.conf of ddclient:
+protocol=dyndns2
+server=dynv6.com
+login=none
+password='QMqGuo6iSKZ45ixgxepv-ELm64zrma'
+z4212011.dynv6.net
+Additionally you also need to specifiy the interface to use, like use=if, if=eth0
+Fritz!OS (German)
+Enable IPv6
+Go to Internet → Zugangsdaten → IPv6 Make sure that IPv6 support is enabled. If your provider does not support native IPv6 yet, then enable tunneled IPv6 with 6to4.
+
+Set up dynv6
+Go to Internet → Freigaben → Dynamic DNS then enable the Option Dynamic DNS benutzen select the provider Benutzerdefiniert and copy the following values into the form:
+
+Update-URL
+http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv4=<ipaddr> http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv6=<ip6addr>&ipv6prefix=<ip6lanprefix> 
+(combined with whitespace to update IPv4 and IPv6 addresses simultaneously)
+Domainname
+z4212011.dynv6.net 
+Benutzername
+QMqGuo6iSKZ45ixgxepv-ELm64zrma 
+Kennwort
+none 
+dynv6 is a free service by Digineo GmbH • Data Privacy • Data Privacy settings
