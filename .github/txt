@@ -1,0 +1,35 @@
+z4212011.dynv6.net
+地位
+记录
+钩子
+指示
+安装说明
+API 概述 描述了管理和更新区域的所有可能性。
+
+应用
+以下应用程序支持 dynv6.com：
+
+DDNS 更新程序 2 （Synology NAS）
+inadyn-mt
+AppQuarter (MacOS)
+Dynephant （Windows）
+有缺少任何应用程序吗？请告诉我们！
+
+dd客户端
+在ddclient 的 ddclient.conf 中使用以下代码片段：
+协议=dyndns2
+服务器=dynv6.com
+登录=无
+密码='QMqGuo6iSKZ45ixgxepv-ELm64zrma'
+z4212011.dynv6.net
+此外，您还需要指定要使用的接口，例如 use=if, if=eth0
+Fritz!OS（德语）
+启用 IPv6
+转到 Internet → Zugangsdaten → IPv6 确保已启用 IPv6 支持。如果您的提供商尚不支持原生 IPv6，请使用 6to4 启用隧道 IPv6。
+
+设置 dynv6
+转到 Internet →→ Freigaben 然后 Dynamic DNS 启用选项 Dynamic DNS benutzen 选择提供商 Benutzerdefiniert 并将以下值复制到表单中：
+
+更新网址
+http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv4=<ipaddr> http://dynv6.com/api/update?hostname=<domain>&token=<username>&ipv6=<ip6addr>&ipv6prefix=<ip6lanprefix> 
+（与空格结合可同时更新 IPv4 和 IPv6 地址）
