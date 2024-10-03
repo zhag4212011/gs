@@ -28,6 +28,8 @@ docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name a
 
 IPTV直播：http://124.70.221.57:35455/tv.m3u
 
+http://124.70.221.57:5000/4gtv.m3u
+
 虎牙一起看：http://你的IP:35455/huyayqk.m3u?url=http://你的IP:35455
 
 斗鱼一起看：http://你的IP:35455/douyuyqk.m3u?url=http://你的IP:35455
