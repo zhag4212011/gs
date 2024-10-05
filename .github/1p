@@ -9,7 +9,9 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 ========================面板账户登录信息==========================
 
  【云服务器】请在安全组放行 28221 端口
- 外网面板地址: https://124.70.221.57:28221/ea664dea
- 内网面板地址: https://192.168.6.141:28221/ea664dea
+ #:外网面板地址:
+ https://124.70.221.57:28221/ea664dea
+内网面板地址: 
+https://192.168.6.141:28221/ea664dea
  username: guk11nst
  password: ebc01ff0
