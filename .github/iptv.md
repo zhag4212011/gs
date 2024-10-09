@@ -1,4 +1,4 @@
-### 一`allinone-LiveRedirect一键部署
+### 一.allinone-LiveRedirect一键部署
 
 ```
 docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone
