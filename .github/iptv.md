@@ -1,19 +1,18 @@
 # allinone-LiveRedirect
 
-还是原来的方式运行，不过是allinone的指令了：
 ```
 docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone
 ```
-配置watchtower每天凌晨两点自动监听allinone镜像更新：
-
+# 配置watchtower每天凌晨两点自动监听allinone镜像更新：
+```
 docker run -d --name watchtower --restart unless-stopped -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower allinone -c --schedule "0 0 2 * * *"
-
+```
 另外，如果你部署在公网上，由于代理了ts切片导致有可能被别人偷走大量流量，为此设置了一个指令，可以控制itv和ysptp的开关：
 
-直接运行裸二进制且不想开启tv直播服务：
-
+# 直接运行裸二进制且不想开启tv直播服务：
+```
 ./allinone_linux_amd64 -tv=false
-
+```
 如果你用PM2运行裸二进制并且进程守护且不想开启tv直播服务：
 
 pm2 start allinone_linux_amd64 --watch --name allinone -- -tv=false
