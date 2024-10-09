@@ -3,7 +3,6 @@ time.cloudflare.com
 ```
 shopify.com
 ```
-```
 time.is
 ```
 ```
