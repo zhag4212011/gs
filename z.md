@@ -1,7 +1,6 @@
 ```
 time.cloudflare.com
 ```
-```
 shopify.com
 ```
 ```
