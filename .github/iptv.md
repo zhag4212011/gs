@@ -1,4 +1,4 @@
-### allinone-LiveRedirect
+### allinone-LiveRedirect一键部署
 
 ```
 docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone
@@ -9,7 +9,7 @@ docker run -d --name watchtower --restart unless-stopped -v /var/run/docker.sock
 ```
 ### 另外，如果你部署在公网上，由于代理了ts切片导致有可能被别人偷走大量流量，为此设置了一个指令，可以控制itv和ysptp的开关：
 
-# 直接运行裸二进制且不想开启tv直播服务：
+### 直接运行裸二进制且不想开启tv直播服务：
 ```
 ./allinone_linux_amd64 -tv=false
 ```
@@ -21,7 +21,7 @@ pm2 start allinone_linux_amd64 --watch --name allinone -- -tv=false
 ```
 docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name allinone youshandefeiyang/allinone -tv=false
 ```
-# 当然默认不加-tv=false参数是提供直播服务的！
+### 当然默认不加-tv=false参数是提供直播服务的！
 
 部署完成后的订阅地址如下
 
@@ -36,9 +36,9 @@ https://103.146.53.122:22139/eb80ec66
 ```
 https://103.146.53.122:22139/eb80ec66
 ```
- username: 
+账号:
 cppozp8n
- password: 
+密码:: 
 d72e4022
 
 IPTV直播：
