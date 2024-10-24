@@ -26,17 +26,9 @@ docker run -d --restart unless-stopped --privileged=true -p 35455:35455 --name a
 
 部署完成后的订阅地址如下
 
-========================面板账户登录信息==========================
-
- 【云服务器】请在安全组放行 22139 端口
- 外网面板地址: 
-https://103.146.53.122:22139/eb80ec66
- 内网面板地址:
- https://103.146.53.122:22139/eb80ec66
- username: 
-cppozp8n
- password: 
-d72e4022
+https://211.101.245.61:26557/4e182e5b* * **：https://211.101.245.61:26557/4e182e5b
+username: 8gofwdrk
+password: bf7c6646
 
 IPTV直播：http://27.152.28.47:35455/tv.m3u
 
